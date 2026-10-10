@@ -1,0 +1,9 @@
+[INFO] 2026-09-28 09:02:53 - Uruchamianie aplikacji...
+[INFO] 2026-09-28 09:02:53 - Pomyślnie uruchomiono serwer testowy SMTP (aiosmtpd) w nowym oknie.
+[INFO] 2026-09-28 09:02:53 - Zainicjalizowano lokalną bazę danych SQLite.
+[INFO] 2026-09-28 09:02:58 - Rozpoczęto sprawdzanie poczty...
+[INFO] 2026-09-28 09:02:58 - Próba uwierzytelnienia użytkownika student na serwerze POP3 127.0.0.1:8110
+[ERROR] 2026-09-28 09:03:00 - Błąd: Serwer POP3 pod adresem 127.0.0.1:8110 odrzucił połączenie.
+[INFO] 2026-09-28 09:03:04 - Inicjowanie wysyłania e-maila...
+[INFO] 2026-09-28 09:03:04 - Próba połączenia z serwerem SMTP: 127.0.0.1:8025
+[ERROR] 2026-09-28 09:03:06 - Błąd wysyłania wiadomości SMTP: [WinError 10061] Nie można nawiązać połączenia, ponieważ komputer docelowy aktywnie go odmawia

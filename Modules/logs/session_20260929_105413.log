@@ -1,0 +1,37 @@
+[INFO] 2026-09-29 10:54:13 - Uruchamianie aplikacji...
+[INFO] 2026-09-29 10:54:13 - [SERWER SMTP] Nasłuchiwanie na porcie 8025...
+[INFO] 2026-09-29 10:54:13 - [SERWER POP3] Nasłuchiwanie na porcie 8110...
+[INFO] 2026-09-29 10:54:14 - Zainicjalizowano lokalną bazę danych SQLite.
+[INFO] 2026-09-29 10:54:19 - Próba połączenia z serwerem SMTP: 127.0.0.1:8025
+[DEBUG] 2026-09-29 10:54:19 - S: 220 test.example.edu SMTP ready
+[DEBUG] 2026-09-29 10:54:19 - C: EHLO student-client
+[DEBUG] 2026-09-29 10:54:19 - S: 250 OK
+[DEBUG] 2026-09-29 10:54:19 - C: MAIL FROM: <ja@mojklient.edu>
+[DEBUG] 2026-09-29 10:54:19 - S: 250 OK
+[DEBUG] 2026-09-29 10:54:19 - C: RCPT TO: <test@odbiorca.edu>
+[DEBUG] 2026-09-29 10:54:19 - S: 250 OK
+[DEBUG] 2026-09-29 10:54:19 - C: DATA
+[DEBUG] 2026-09-29 10:54:19 - S: 354 End data with <CRLF>.<CRLF>
+[DEBUG] 2026-09-29 10:54:19 - C: [Wysyłanie treści wiadomości i kropki kończącej...]
+[DEBUG] 2026-09-29 10:54:19 - S: 250 Message accepted
+[DEBUG] 2026-09-29 10:54:19 - C: QUIT
+[DEBUG] 2026-09-29 10:54:19 - S: 221 Bye
+[INFO] 2026-09-29 10:54:19 - Wiadomość do test@odbiorca.edu wysłana pomyślnie.
+[INFO] 2026-09-29 10:54:23 - Próba uwierzytelnienia użytkownika student na serwerze POP3 127.0.0.1:8110
+[DEBUG] 2026-09-29 10:54:23 - C: USER student
+[DEBUG] 2026-09-29 10:54:23 - C: LIST
+[INFO] 2026-09-29 10:54:23 - Na serwerze znaleziono 2 wiadomości. Rozpoczynam pobieranie...
+[DEBUG] 2026-09-29 10:54:23 - C: RETR 1
+[DEBUG] 2026-09-29 10:54:23 - C: RETR 2
+[DEBUG] 2026-09-29 10:54:23 - C: QUIT
+[INFO] 2026-09-29 10:54:23 - Zakończono połączenie POP3.
+[INFO] 2026-09-29 10:54:23 - Zapisano wiadomość lokalnie: Brak tematu
+[INFO] 2026-09-29 10:54:23 - Zapisano wiadomość lokalnie: Wiadomosc Powitalna
+[INFO] 2026-09-29 10:54:23 - Zapisano wiadomość lokalnie: Wiadomosc Powitalna
+[INFO] 2026-09-29 10:54:23 - Zapisano wiadomość lokalnie: Wiadomosc Powitalna
+[INFO] 2026-09-29 10:54:23 - Zapisano wiadomość lokalnie: Brak tematu
+[INFO] 2026-09-29 10:54:23 - Zapisano wiadomość lokalnie: asdads
+[INFO] 2026-09-29 10:54:23 - Zapisano wiadomość lokalnie: asdads
+[INFO] 2026-09-29 10:54:23 - Zapisano wiadomość lokalnie: asdads
+[INFO] 2026-09-29 10:54:23 - Zapisano wiadomość lokalnie: asdads
+[INFO] 2026-09-29 10:54:33 - Zamykanie aplikacji...

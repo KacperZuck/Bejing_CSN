@@ -1,0 +1,56 @@
+[INFO] 2026-09-29 10:26:39 - Uruchamianie aplikacji...
+[INFO] 2026-09-29 10:26:39 - [SERWER SMTP] Nasłuchiwanie na porcie 8025...
+[INFO] 2026-09-29 10:26:39 - [SERWER POP3] Nasłuchiwanie na porcie 8110...
+[INFO] 2026-09-29 10:26:41 - Zainicjalizowano lokalną bazę danych SQLite.
+[INFO] 2026-09-29 10:26:44 - Rozpoczęto sprawdzanie poczty...
+[INFO] 2026-09-29 10:26:44 - Próba uwierzytelnienia użytkownika student na serwerze POP3 127.0.0.1:8110
+[DEBUG] 2026-09-29 10:26:44 - S: +OK POP3 server ready
+[DEBUG] 2026-09-29 10:26:44 - C: USER student
+[DEBUG] 2026-09-29 10:26:44 - S: +OK
+[DEBUG] 2026-09-29 10:26:44 - C: PASS [UKRYTE HASŁO]
+[DEBUG] 2026-09-29 10:26:44 - S: +OK authenticated
+[DEBUG] 2026-09-29 10:26:44 - C: LIST
+[DEBUG] 2026-09-29 10:26:44 - S: 
++OK 1 messages
+1 250
+.
+[DEBUG] 2026-09-29 10:26:44 - C: RETR 1
+[DEBUG] 2026-09-29 10:26:44 - Pobrano treść wiadomości.
+[DEBUG] 2026-09-29 10:26:44 - C: QUIT
+[DEBUG] 2026-09-29 10:26:44 - S: +OK Bye
+[INFO] 2026-09-29 10:26:44 - Zakończono połączenie POP3.
+[INFO] 2026-09-29 10:26:44 - Zapisano wiadomość lokalnie: Pobrano przez POP3 (Socket)
+[INFO] 2026-09-29 10:26:52 - Inicjowanie wysyłania e-maila...
+[INFO] 2026-09-29 10:26:52 - Próba połączenia z serwerem SMTP: 127.0.0.1:8025
+[DEBUG] 2026-09-29 10:26:52 - S: 220 test.example.edu SMTP ready
+[DEBUG] 2026-09-29 10:26:52 - C: EHLO student-client
+[DEBUG] 2026-09-29 10:26:52 - S: 250 OK
+[DEBUG] 2026-09-29 10:26:52 - C: MAIL FROM: <alice@example.edu>
+[DEBUG] 2026-09-29 10:26:52 - S: 250 OK
+[DEBUG] 2026-09-29 10:26:52 - C: RCPT TO: <bob@example.edu>
+[DEBUG] 2026-09-29 10:26:52 - S: 250 OK
+[DEBUG] 2026-09-29 10:26:52 - C: DATA
+[DEBUG] 2026-09-29 10:26:52 - S: 354 End data with <CRLF>.<CRLF>
+[DEBUG] 2026-09-29 10:26:52 - C: [Wysyłanie treści wiadomości i kropki kończącej...]
+[DEBUG] 2026-09-29 10:26:52 - S: 250 Message accepted
+[DEBUG] 2026-09-29 10:26:52 - C: QUIT
+[DEBUG] 2026-09-29 10:26:52 - S: 221 Bye
+[INFO] 2026-09-29 10:26:52 - Wiadomość do bob@example.edu wysłana pomyślnie.
+[INFO] 2026-09-29 10:27:06 - Rozpoczęto sprawdzanie poczty...
+[INFO] 2026-09-29 10:27:06 - Próba uwierzytelnienia użytkownika student na serwerze POP3 127.0.0.1:8110
+[DEBUG] 2026-09-29 10:27:06 - S: +OK POP3 server ready
+[DEBUG] 2026-09-29 10:27:06 - C: USER student
+[DEBUG] 2026-09-29 10:27:06 - S: +OK
+[DEBUG] 2026-09-29 10:27:06 - C: PASS [UKRYTE HASŁO]
+[DEBUG] 2026-09-29 10:27:06 - S: +OK authenticated
+[DEBUG] 2026-09-29 10:27:06 - C: LIST
+[DEBUG] 2026-09-29 10:27:06 - S: 
++OK 1 messages
+1 250
+.
+[DEBUG] 2026-09-29 10:27:06 - C: RETR 1
+[DEBUG] 2026-09-29 10:27:06 - Pobrano treść wiadomości.
+[DEBUG] 2026-09-29 10:27:06 - C: QUIT
+[DEBUG] 2026-09-29 10:27:06 - S: +OK Bye
+[INFO] 2026-09-29 10:27:06 - Zakończono połączenie POP3.
+[INFO] 2026-09-29 10:27:06 - Zapisano wiadomość lokalnie: Pobrano przez POP3 (Socket)

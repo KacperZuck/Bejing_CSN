@@ -1,0 +1,64 @@
+[INFO] 2026-09-29 11:13:16 - Starting application...
+[INFO] 2026-09-29 11:13:16 - [SMTP SERVER] Listening on port 8025...
+[INFO] 2026-09-29 11:13:16 - [POP3 SERVER] Listening on port 8110...
+[INFO] 2026-09-29 11:13:17 - Initialized local SQLite database.
+[INFO] 2026-09-29 11:14:30 - Connecting to SMTP server: 127.0.0.1:8025
+[DEBUG] 2026-09-29 11:14:30 - S: 220 test.example.edu SMTP ready
+[DEBUG] 2026-09-29 11:14:30 - C: EHLO student-client
+[DEBUG] 2026-09-29 11:14:30 - S: 250 OK
+[DEBUG] 2026-09-29 11:14:30 - C: MAIL FROM: <me@myclient.edu>
+[DEBUG] 2026-09-29 11:14:30 - S: 250 OK
+[DEBUG] 2026-09-29 11:14:30 - C: RCPT TO: <test@recipient.edu>
+[DEBUG] 2026-09-29 11:14:30 - S: 250 OK
+[DEBUG] 2026-09-29 11:14:30 - C: DATA
+[DEBUG] 2026-09-29 11:14:30 - S: 354 End data with <CRLF>.<CRLF>
+[DEBUG] 2026-09-29 11:14:30 - C: [Sending message body and terminating dot...]
+[DEBUG] 2026-09-29 11:14:30 - S: 250 Message accepted
+[DEBUG] 2026-09-29 11:14:30 - C: QUIT
+[DEBUG] 2026-09-29 11:14:30 - S: 221 Bye
+[INFO] 2026-09-29 11:14:30 - Message to test@recipient.edu sent successfully.
+[INFO] 2026-09-29 11:14:48 - Connecting to SMTP server: 127.0.0.1:8025
+[DEBUG] 2026-09-29 11:14:48 - S: 220 test.example.edu SMTP ready
+[DEBUG] 2026-09-29 11:14:48 - C: EHLO student-client
+[DEBUG] 2026-09-29 11:14:48 - S: 250 OK
+[DEBUG] 2026-09-29 11:14:48 - C: MAIL FROM: <me@myclient.edu>
+[DEBUG] 2026-09-29 11:14:48 - S: 250 OK
+[DEBUG] 2026-09-29 11:14:48 - C: RCPT TO: <test@recipient.edu>
+[DEBUG] 2026-09-29 11:14:48 - S: 250 OK
+[DEBUG] 2026-09-29 11:14:48 - C: DATA
+[DEBUG] 2026-09-29 11:14:48 - S: 354 End data with <CRLF>.<CRLF>
+[DEBUG] 2026-09-29 11:14:48 - C: [Sending message body and terminating dot...]
+[DEBUG] 2026-09-29 11:14:48 - S: 250 Message accepted
+[DEBUG] 2026-09-29 11:14:48 - C: QUIT
+[DEBUG] 2026-09-29 11:14:48 - S: 221 Bye
+[INFO] 2026-09-29 11:14:48 - Message to test@recipient.edu sent successfully.
+[INFO] 2026-09-29 11:14:56 - Connecting to SMTP server: 127.0.0.1:8025
+[DEBUG] 2026-09-29 11:14:56 - S: 220 test.example.edu SMTP ready
+[DEBUG] 2026-09-29 11:14:56 - C: EHLO student-client
+[DEBUG] 2026-09-29 11:14:56 - S: 250 OK
+[DEBUG] 2026-09-29 11:14:56 - C: MAIL FROM: <me@myclient.edu>
+[DEBUG] 2026-09-29 11:14:56 - S: 250 OK
+[DEBUG] 2026-09-29 11:14:56 - C: RCPT TO: <test@recipient.edu>
+[DEBUG] 2026-09-29 11:14:56 - S: 250 OK
+[DEBUG] 2026-09-29 11:14:56 - C: DATA
+[DEBUG] 2026-09-29 11:14:56 - S: 354 End data with <CRLF>.<CRLF>
+[DEBUG] 2026-09-29 11:14:56 - C: [Sending message body and terminating dot...]
+[DEBUG] 2026-09-29 11:14:56 - S: 250 Message accepted
+[DEBUG] 2026-09-29 11:14:56 - C: QUIT
+[DEBUG] 2026-09-29 11:14:56 - S: 221 Bye
+[INFO] 2026-09-29 11:14:56 - Message to test@recipient.edu sent successfully.
+[INFO] 2026-09-29 11:15:07 - Authenticating user student on POP3 server 127.0.0.1:8110
+[DEBUG] 2026-09-29 11:15:07 - C: USER student
+[DEBUG] 2026-09-29 11:15:07 - C: LIST
+[INFO] 2026-09-29 11:15:07 - Found 4 messages on the server. Starting download...
+[DEBUG] 2026-09-29 11:15:07 - C: RETR 1
+[DEBUG] 2026-09-29 11:15:07 - C: RETR 2
+[DEBUG] 2026-09-29 11:15:07 - C: RETR 3
+[DEBUG] 2026-09-29 11:15:07 - C: RETR 4
+[DEBUG] 2026-09-29 11:15:07 - C: QUIT
+[INFO] 2026-09-29 11:15:07 - POP3 connection closed.
+[INFO] 2026-09-29 11:15:07 - Message saved locally: Welcome Message
+[INFO] 2026-09-29 11:15:07 - Message saved locally: test_1
+[INFO] 2026-09-29 11:15:07 - Message saved locally: test_2
+[INFO] 2026-09-29 11:15:07 - Message saved locally: test_3
+[INFO] 2026-09-29 11:15:36 - Application closed.

@@ -1,0 +1,30 @@
+[INFO] 2026-09-29 10:52:59 - Uruchamianie aplikacji...
+[INFO] 2026-09-29 10:52:59 - [SERWER POP3] Nasłuchiwanie na porcie 8110...
+[INFO] 2026-09-29 10:52:59 - [SERWER SMTP] Nasłuchiwanie na porcie 8025...
+[INFO] 2026-09-29 10:53:00 - Zainicjalizowano lokalną bazę danych SQLite.
+[INFO] 2026-09-29 10:53:06 - Próba połączenia z serwerem SMTP: 127.0.0.1:8025
+[DEBUG] 2026-09-29 10:53:06 - S: 220 test.example.edu SMTP ready
+[DEBUG] 2026-09-29 10:53:06 - C: EHLO student-client
+[DEBUG] 2026-09-29 10:53:06 - S: 250 OK
+[DEBUG] 2026-09-29 10:53:06 - C: MAIL FROM: <ja@mojklient.edu>
+[DEBUG] 2026-09-29 10:53:06 - S: 250 OK
+[DEBUG] 2026-09-29 10:53:06 - C: RCPT TO: <test@odbiorca.edu>
+[DEBUG] 2026-09-29 10:53:06 - S: 250 OK
+[DEBUG] 2026-09-29 10:53:06 - C: DATA
+[DEBUG] 2026-09-29 10:53:06 - S: 354 End data with <CRLF>.<CRLF>
+[DEBUG] 2026-09-29 10:53:06 - C: [Wysyłanie treści wiadomości i kropki kończącej...]
+[DEBUG] 2026-09-29 10:53:06 - S: 250 Message accepted
+[DEBUG] 2026-09-29 10:53:06 - C: QUIT
+[DEBUG] 2026-09-29 10:53:06 - S: 221 Bye
+[INFO] 2026-09-29 10:53:06 - Wiadomość do test@odbiorca.edu wysłana pomyślnie.
+[INFO] 2026-09-29 10:53:08 - Próba uwierzytelnienia użytkownika student na serwerze POP3 127.0.0.1:8110
+[DEBUG] 2026-09-29 10:53:08 - C: USER student
+[DEBUG] 2026-09-29 10:53:08 - C: LIST
+[INFO] 2026-09-29 10:53:08 - Na serwerze znaleziono 2 wiadomości. Rozpoczynam pobieranie...
+[DEBUG] 2026-09-29 10:53:08 - C: RETR 1
+[DEBUG] 2026-09-29 10:53:08 - C: RETR 2
+[DEBUG] 2026-09-29 10:53:08 - C: QUIT
+[INFO] 2026-09-29 10:53:08 - Zakończono połączenie POP3.
+[INFO] 2026-09-29 10:53:08 - Zapisano wiadomość lokalnie: Wiadomosc Powitalna
+[INFO] 2026-09-29 10:53:08 - Zapisano wiadomość lokalnie: asdasd
+[INFO] 2026-09-29 10:53:29 - Zamykanie aplikacji...

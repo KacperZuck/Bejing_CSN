@@ -1,0 +1,55 @@
+[INFO] 2026-09-29 11:05:10 - Starting application...
+[INFO] 2026-09-29 11:05:10 - [SMTP SERVER] Listening on port 8025...
+[INFO] 2026-09-29 11:05:10 - [POP3 SERVER] Listening on port 8110...
+[INFO] 2026-09-29 11:05:10 - Initialized local SQLite database.
+[INFO] 2026-09-29 11:05:14 - Authenticating user student on POP3 server 127.0.0.1:8110
+[DEBUG] 2026-09-29 11:05:14 - C: USER student
+[DEBUG] 2026-09-29 11:05:14 - C: LIST
+[INFO] 2026-09-29 11:05:14 - Found 1 messages on the server. Starting download...
+[DEBUG] 2026-09-29 11:05:14 - C: RETR 1
+[DEBUG] 2026-09-29 11:05:14 - C: QUIT
+[INFO] 2026-09-29 11:05:14 - POP3 connection closed.
+[INFO] 2026-09-29 11:05:14 - Message saved locally: Welcome Message
+[INFO] 2026-09-29 11:05:18 - Authenticating user student on POP3 server 127.0.0.1:8110
+[DEBUG] 2026-09-29 11:05:18 - C: USER student
+[DEBUG] 2026-09-29 11:05:18 - C: LIST
+[INFO] 2026-09-29 11:05:18 - Found 1 messages on the server. Starting download...
+[DEBUG] 2026-09-29 11:05:18 - C: RETR 1
+[DEBUG] 2026-09-29 11:05:18 - C: QUIT
+[INFO] 2026-09-29 11:05:18 - POP3 connection closed.
+[INFO] 2026-09-29 11:05:18 - Message saved locally: Welcome Message
+[INFO] 2026-09-29 11:05:31 - Connecting to SMTP server: 127.0.0.1:8025
+[DEBUG] 2026-09-29 11:05:31 - S: 220 test.example.edu SMTP ready
+[DEBUG] 2026-09-29 11:05:31 - C: EHLO student-client
+[DEBUG] 2026-09-29 11:05:31 - S: 250 OK
+[DEBUG] 2026-09-29 11:05:31 - C: MAIL FROM: <me@myclient.edu>
+[DEBUG] 2026-09-29 11:05:31 - S: 250 OK
+[DEBUG] 2026-09-29 11:05:31 - C: RCPT TO: <test@recipient.edu>
+[DEBUG] 2026-09-29 11:05:31 - S: 250 OK
+[DEBUG] 2026-09-29 11:05:31 - C: DATA
+[DEBUG] 2026-09-29 11:05:31 - S: 354 End data with <CRLF>.<CRLF>
+[DEBUG] 2026-09-29 11:05:31 - C: [Sending message body and terminating dot...]
+[DEBUG] 2026-09-29 11:05:31 - S: 250 Message accepted
+[DEBUG] 2026-09-29 11:05:31 - C: QUIT
+[DEBUG] 2026-09-29 11:05:31 - S: 221 Bye
+[INFO] 2026-09-29 11:05:31 - Message to test@recipient.edu sent successfully.
+[INFO] 2026-09-29 11:05:33 - Authenticating user student on POP3 server 127.0.0.1:8110
+[DEBUG] 2026-09-29 11:05:33 - C: USER student
+[DEBUG] 2026-09-29 11:05:33 - C: LIST
+[INFO] 2026-09-29 11:05:33 - Found 2 messages on the server. Starting download...
+[DEBUG] 2026-09-29 11:05:33 - C: RETR 1
+[DEBUG] 2026-09-29 11:05:33 - C: RETR 2
+[DEBUG] 2026-09-29 11:05:33 - C: QUIT
+[INFO] 2026-09-29 11:05:33 - POP3 connection closed.
+[INFO] 2026-09-29 11:05:33 - Message saved locally: Welcome Message
+[INFO] 2026-09-29 11:05:34 - Message saved locally: asdasdasd
+[INFO] 2026-09-29 11:05:44 - Authenticating user student on POP3 server 127.0.0.1:8110
+[DEBUG] 2026-09-29 11:05:44 - C: USER student
+[DEBUG] 2026-09-29 11:05:44 - C: LIST
+[INFO] 2026-09-29 11:05:44 - Found 2 messages on the server. Starting download...
+[DEBUG] 2026-09-29 11:05:44 - C: RETR 1
+[DEBUG] 2026-09-29 11:05:44 - C: RETR 2
+[DEBUG] 2026-09-29 11:05:44 - C: QUIT
+[INFO] 2026-09-29 11:05:44 - POP3 connection closed.
+[INFO] 2026-09-29 11:05:44 - Message saved locally: Welcome Message
+[INFO] 2026-09-29 11:05:44 - Message saved locally: asdasdasd
