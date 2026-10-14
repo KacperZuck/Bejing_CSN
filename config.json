@@ -1,0 +1,15 @@
+{
+    "server": {
+        "host": "127.0.0.1",
+        "smtp_port": 8025,
+        "pop3_port": 8110
+    },
+    "account": {
+        "username": "student",
+        "password": "password",
+        "email_address": "client@email.edu"
+    },
+    "defaults": {
+        "recipient_email": "test@recipient.edu"
+    }
+}

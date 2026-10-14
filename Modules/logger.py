@@ -17,8 +17,7 @@ def setup_logger():
     logger = logging.getLogger("EmailClient")
     logger.setLevel(logging.DEBUG)
 
-    formatter = logging.Formatter('[%(levelname)s] %(asctime)s - %(message)s', datefmt='%Y-%m-%d %H:%M:%S')
-
+    formatter = logging.Formatter('[%(levelname)s] %(asctime)s.%(msecs)03d - %(message)s', datefmt='%Y-%m-%d %H:%M:%S')
     file_handler = logging.FileHandler(log_filename, encoding='utf-8')
     file_handler.setFormatter(formatter)
 

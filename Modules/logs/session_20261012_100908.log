@@ -1,0 +1,13 @@
+[INFO] 2026-10-12 10:09:08 - Starting application.
+[INFO] 2026-10-12 10:09:08 - [SMTP SERVER] Listening on 127.0.0.1:8025...
+[INFO] 2026-10-12 10:09:08 - [POP3 SERVER] Listening on 127.0.0.1:8110...
+[INFO] 2026-10-12 10:09:09 - Initialized local SQLite database.
+[INFO] 2026-10-12 10:09:14 - Authenticating user student on POP3 server 127.0.0.1:8110
+[DEBUG] 2026-10-12 10:09:14 - C: USER student
+[DEBUG] 2026-10-12 10:09:14 - C: LIST
+[INFO] 2026-10-12 10:09:14 - Found 1 messages on the server. Starting download...
+[DEBUG] 2026-10-12 10:09:14 - C: RETR 1
+[DEBUG] 2026-10-12 10:09:14 - C: QUIT
+[INFO] 2026-10-12 10:09:14 - POP3 connection closed.
+[INFO] 2026-10-12 10:09:14 - Message saved locally: Welcome Message
+[INFO] 2026-10-12 10:09:17 - Application closed.

@@ -63,17 +63,20 @@ class POP3Client:
                             body_content = retr_resp.split("\r\n.\r\n")[0]
 
                         subject = "No subject"
+                        sender = "Unspecified"
                         date_str = datetime.now().strftime("%Y-%m-%d %H:%M")
 
                         for line in headers_raw.split("\r\n"):
                             if line.lower().startswith("subject:"):
                                 subject = line[8:].strip()
+                            elif line.lower().startswith("from:"):
+                                sender = line[5:].strip()
                             elif line.lower().startswith("date:"):
                                 date_str = line[5:].strip()
 
                         messages.append({
                             "msg_number": i,
-                            "sender": "server@example.com",
+                            "sender": sender,
                             "subject": subject,
                             "date": date_str,
                             "body": body_content.strip()

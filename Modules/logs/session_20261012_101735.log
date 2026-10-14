@@ -1,0 +1,29 @@
+[INFO] 2026-10-12 10:17:35 - Starting application.
+[INFO] 2026-10-12 10:17:35 - [SMTP SERVER] Listening on 127.0.0.1:8025...
+[INFO] 2026-10-12 10:17:35 - [POP3 SERVER] Listening on 127.0.0.1:8110...
+[INFO] 2026-10-12 10:17:36 - Initialized local SQLite database.
+[INFO] 2026-10-12 10:22:07 - Connecting to SMTP server: 127.0.0.1:8025
+[DEBUG] 2026-10-12 10:22:07 - S: 220 test.example.edu SMTP ready
+[DEBUG] 2026-10-12 10:22:07 - C: EHLO student-client
+[DEBUG] 2026-10-12 10:22:07 - S: 250 OK
+[DEBUG] 2026-10-12 10:22:07 - C: MAIL FROM: <client@email.edu>
+[DEBUG] 2026-10-12 10:22:07 - S: 250 OK
+[DEBUG] 2026-10-12 10:22:07 - C: RCPT TO: <test@recipient.edu>
+[DEBUG] 2026-10-12 10:22:07 - S: 250 OK
+[DEBUG] 2026-10-12 10:22:07 - C: DATA
+[DEBUG] 2026-10-12 10:22:07 - S: 354 End data with <CRLF>.<CRLF>
+[DEBUG] 2026-10-12 10:22:07 - C: [Sending message body and terminating dot...]
+[DEBUG] 2026-10-12 10:22:07 - S: 250 Message accepted
+[DEBUG] 2026-10-12 10:22:07 - C: QUIT
+[DEBUG] 2026-10-12 10:22:07 - S: 221 Bye
+[INFO] 2026-10-12 10:22:07 - Message to test@recipient.edu sent successfully.
+[INFO] 2026-10-12 10:22:17 - Authenticating user student on POP3 server 127.0.0.1:8110
+[DEBUG] 2026-10-12 10:22:17 - C: USER student
+[DEBUG] 2026-10-12 10:22:17 - C: LIST
+[INFO] 2026-10-12 10:22:17 - Found 2 messages on the server. Starting download...
+[DEBUG] 2026-10-12 10:22:17 - C: RETR 1
+[DEBUG] 2026-10-12 10:22:17 - C: RETR 2
+[DEBUG] 2026-10-12 10:22:17 - C: QUIT
+[INFO] 2026-10-12 10:22:17 - POP3 connection closed.
+[INFO] 2026-10-12 10:22:17 - Message saved locally: Welcome Message
+[INFO] 2026-10-12 10:22:17 - Message saved locally: sdadasa

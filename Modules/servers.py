@@ -2,6 +2,7 @@ import socket
 import threading
 from datetime import datetime
 from Modules.logger import logger
+from Modules.config_loader import load_config
 
 # Global list acting as the server's mail spool
 SERVER_MAILBOX = [
@@ -12,13 +13,13 @@ SERVER_MAILBOX = [
 ]
 
 
-def run_smtp():
+def run_smtp(host, port):
     global SERVER_MAILBOX
     try:
         server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        server.bind(('127.0.0.1', 8025))
+        server.bind((host, port))
         server.listen(1)
-        logger.info("[SMTP SERVER] Listening on port 8025...")
+        logger.info(f"[SMTP SERVER] Listening on {host}:{port}...")
 
         while True:
             conn, addr = server.accept()
@@ -39,9 +40,7 @@ def run_smtp():
                         while "\r\n.\r\n" not in email_data:
                             email_data += conn.recv(1024).decode('utf-8')
 
-                        # Append the received email to the mailbox
                         SERVER_MAILBOX.append(email_data.replace("\r\n.\r\n", ""))
-
                         conn.sendall(b"250 Message accepted\r\n")
                     elif data.upper().startswith("QUIT"):
                         conn.sendall(b"221 Bye\r\n")
@@ -54,13 +53,13 @@ def run_smtp():
         logger.error(f"SMTP Server Error: {e}")
 
 
-def run_pop():
+def run_pop3(host, port):
     global SERVER_MAILBOX
     try:
         server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        server.bind(('127.0.0.1', 8110))
+        server.bind((host, port))
         server.listen(1)
-        logger.info("[POP3 SERVER] Listening on port 8110...")
+        logger.info(f"[POP3 SERVER] Listening on {host}:{port}...")
 
         while True:
             conn, addr = server.accept()
@@ -99,6 +98,11 @@ def run_pop():
         logger.error(f"POP3 Server Error: {e}")
 
 
-def start_back_servers():
-    threading.Thread(target=run_smtp, daemon=True).start()
-    threading.Thread(target=run_pop, daemon=True).start()
+def start_servers():
+    config = load_config()
+    host = config["server"]["host"]
+    smtp_port = config["server"]["smtp_port"]
+    pop3_port = config["server"]["pop3_port"]
+
+    threading.Thread(target=run_smtp, args=(host, smtp_port), daemon=True).start()
+    threading.Thread(target=run_pop3, args=(host, pop3_port), daemon=True).start()
